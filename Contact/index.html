@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact | LucasvanderMeer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen and (min-width: 1200px)' href='main-desktop.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (min-width: 768px) and (max-width: 1200px)' href='main-tablet.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width: 768px)' href='main-phone.css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="pas.png">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <a class="menu" href="../">Home</a>
+            <a class="menu" href="../About/">About</a>
+            <a class="menu" href=".">Contact</a>
+            <a class="menu" href="../Login/">Login</a>
+        </nav>
+    </div>
+    <div id="form">
+        <div class="contact-info">
+        <h3 id="Contact">Contact</h3>
+        <div class="balk"></div>
+        </div>
+        <form method="POST" action="mail.php">
+            <table>
+                <tr>
+                    <td><input type="text" name="firstname" id="name1" placeholder="VoorNaam" required></td>
+                    <td><input type="text" name="lastname" id="name2" placeholder="AchterNaam" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="Email" id="Email" placeholder="Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea rows="6" name="Message" id="Message" placeholder="Bericht" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" value="Verzenden" id="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <p id="footertxt">© 2020 - Lucas van der Meer</p>
+    </div>
+</body>
+</html>
